@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Zoo rescue tracker</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #54ba4d;
+            padding: 25px;
+            padding-top: 75px;
+            min-height:1200px;
+        }
+
+        h1,h2 {
+            color: #2d6a4f;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .alert {
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            background-color: #2d6a4f;
+            color:white;
+            padding: 25px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        .animal {
+            background-color: #d8f3dc;
+            border: solid 4px #2d6a4f;
+            padding: 10px;
+            margin: 8px 0;
+            width:220px;
+        }
+
+        .moved {
+            position: relative;
+            left: 35px;
+            background-color: #95d5b2;
+        }
+
+        .card {
+            position: relative;
+            background:white;
+            border: 2px solid #52b288;
+            border-radius: 10px;
+            padding: 25px;
+            width:230px;
+            text-align: center;
+        }
+
+        .tag {
+            position:absolute;
+            top: -10px ;
+            right: -10px;
+            background-color: #f77f00;
+            color:white;
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .zone {
+            position: sticky;
+            top:50px;
+            background-color: #2d6a4f;
+            color:white;
+            padding:10px;
+            margin-top: 25px;
+            font-weight:bold;
+        }
+
+        .case {
+        background-color: white;
+        border:2px solid #52b788;
+        padding:10px
+        margin:8px  0;
+        width:230px;
+        border-radius:8px;
+
+        }
+
+        code {
+            background-color: #d8f3dc;
+            color: #1b4332;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+    </style>
+
+    <body>
+        <div class="alert"> Zoo rescue alert- all teams are active </div>
+
+        <h1>Zoo rescue tracker</h1>
+        <p style="text-align:center;"> Learn Css positioning By placing animal Cards, rescue tags and sticky zone labels</p>
+
+        <h2>Static positioning</h2>
+        <p>static is the default position animals appear one below each other</p>
+        <div class="animal">lion-resting zone</div>
+        <div class="animal">elephant-water zone</div>
+        <div class="animal">penguin-ice zone</div>
+
+        <h2>Relative positioning</h2>
+        <p>The rescue tag is placed on the animal card using absolute positioning</p>
+
+        <div class="card">
+            panda <br>
+            medical check complete
+            <div class="tag">safe</div>
+        </div>
+
+        <h2>Sticky positioning</h2>
+        <p>The rescue zone label sticks to the top while scrolling</p>
+
+        <div class="zone">Rescue zone cases</div>
+
+        <div class="case"> Tiger-Observation</div>
+        <div class="case">deer-released</div>
+        <div class="case">owl-night care</div>
+        <div class="case">turtle-shell treatment</div>
+        <div class="case">rabit-healthy</div>
+        <div class="case">Flamingo-wing check</div>
+        <div class="case">monkey-play area</div>
+        <div class="case">Horse- recovery stable</div>
+
+        <h2>top,right,bottom,left</h2>
+        <p> use <code>top</code>, <code>right</code>,<code>left</code>.<code>bottom</code>to control where positioned elements appear</p>
+
+    </body>
+</html>
